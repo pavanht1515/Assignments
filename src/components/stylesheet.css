@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper .sidebar{
+    background: rgb(246, 248, 250);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul li p{
+    color:gray;
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.wrapper .sidebar ul li a{
+    padding: 13px 30px;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: black;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: peachpuff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+
+body{
+    background: #f5f6fa;
+}
+
+body .active .wrapper .sidebar{
+    left: -225px;
+}
+
+body .active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+.top{
+    margin-left:630;
+    margin-top:50;
+}
+
+.top .grid{
+    margin-left: 780;
+}
+
+.profile1{
+    background-size: cover;
+    position: relative;
+    /* display: inline-block; */
+    float: left;
+}
+
+.profile1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile1 i{
+    color: #66ff00;
+}
+
+.profile{
+    margin-top: -10px;
+    width : 75px;
+    height : 75px;
+    margin-left: 800px;
+    float:left;
+}
+
+.sortBy{
+       display:  grid;
+       grid-template-columns: 10rem 40rem 5rem;
+       float:left
+}
+
+.afterprofile{
+    position: relative;
+    display: inline-block;
+
+}
